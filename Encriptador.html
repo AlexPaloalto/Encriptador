@@ -11,13 +11,20 @@
         <p>Encriptador</p>
     </header>
     
+    <div>
+        <input type="text" id="texto-inicio">    
+        <button onclick="guardarTexto()">Encriptar</button>
+        <button onclick="desencriptarTexto()">Desencriptar</button>
+    </div>
     
-    <input type="text" id="texto-inicio">    
-    <button onclick="guardarTexto()">Encriptar</button>
 
     <br>
-
-    <input type="text" id="resultado" readonly>
+    <div>
+        <label>Resultado:</label>
+        <input type="text" id="resultado" readonly>
+        <button onclick="copiarTexto()">Copy Paste</button>
+    </div>
+    
 
     <script src="funciones.js"></script>
 </body>
