@@ -1,4 +1,7 @@
+
 function guardarTexto(){
     var texto = document.getElementById("texto-inicio").value;
-    document.getElementById("resultado").textContent = "Texto guardado: " + texto;
+    var texto_modificado = texto.replace(/a/g, "ai");
+    document.getElementById("resultado").value =  texto_modificado;
 }
+
