@@ -4,26 +4,46 @@
 <head>
     <meta charset="UTF-8">
     <title>Encriptador Web</title>
+    <link rel="stylesheet" href="stilos.css">
+    <link rel="stylesheet" href="reset.css">
 </head>
 
 <body>
     <header>
-        <p>Encriptador</p>
+        <div class="header-grid">
+            <div class="header-img">
+                <img src="aluraoracle.png" class="alura_img">
+            </div>
+            <div class="header-text">
+                <h1>Encriptador - Alejandro </h1>
+            </div>
+            
+        </div>
+        
     </header>
     
-    <div>
-        <input type="text" id="texto-inicio">    
-        <button onclick="guardarTexto()">Encriptar</button>
-        <button onclick="desencriptarTexto()">Desencriptar</button>
-    </div>
-    
+    <main>
+        <div class="main-grid">
 
-    <br>
-    <div>
-        <label>Resultado:</label>
-        <input type="text" id="resultado" readonly>
-        <button onclick="copiarTexto()">Copy Paste</button>
-    </div>
+            <div class="Primer-texto">
+                <input type="text" id="texto-inicio" placeholder="Escribe un texto :)">    
+                <p class="texto-noti">Solo letras minusculas y sin acentos</p>
+                <button onclick="guardarTexto()" class="boton-encrip">Encriptar</button>
+                <button onclick="desencriptarTexto()" class="boton-desen">Desencriptar</button>
+            </div>
+            
+
+            
+            <div class="segundo-texto">
+                <input type="text" id="resultado" placeholder="Estoy esperando :)" readonly>
+                <p></p>
+                <button onclick="copiarTexto()" class="boton-copy">Copy Paste</button>
+            </div>
+        </div>
+    </main>
+
+    
+    
     
 
     <script src="funciones.js"></script>

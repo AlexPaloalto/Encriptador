@@ -1,0 +1,139 @@
+header{
+    background: #D9A577;
+    padding: 20px;
+}
+
+.header-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+.header-img img{
+    width: 50%;
+    height: auto;
+}
+
+.header-text{
+    text-align: center;
+    font-size: 28px;
+}
+
+
+main{
+    background: linear-gradient(#D9A577,#A68521);
+}
+
+.main-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items:start;
+}
+
+
+
+#texto-inicio{
+    border: none;
+    width: 50%;
+    background-color: #abe9b3;
+    height: 400px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    font-size: 20px;
+    margin-left: 100px;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+
+#texto-inicio:focus{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#texto-inicio::placeholder{
+    font-size: 20px;
+    padding: 10px 0 10px 10px;
+    color: #374342;
+    box-sizing: border-box;
+}
+
+#resultado{
+    border: none;
+    width: 50%;
+    background-color: #abe9b3;
+    height: 400px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    font-size: 20px;
+    margin-left: 100px;
+    border-radius: 10px;
+}
+
+
+#resultado:focus{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+#texto-inicio:hover{
+    opacity: 0.6;
+}
+
+.texto-noti{
+    margin: 40px 100px;
+}
+
+.boton-encrip{
+    background:  aqua;
+    width: 150px;
+    height: 50px;
+    margin-left: 100px;
+    border-color: blue;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 9px aqua;
+}
+
+.boton-encrip:active{
+    background-color: blue;
+    box-shadow: 0 5px aqua;
+    transform: translateY(4px);
+}
+
+.boton-desen{
+    background: bisque;
+    width: 150px;
+    height: 50px;
+    margin-left: 70px;
+    border-color:blue;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 9px bisque;
+}
+
+.boton-desen:active {
+    background-color: rgb(143, 108, 64);
+    box-shadow: 0 5px bisque;
+    transform: translateY(4px);
+}
+
+#resultado:hover{
+    opacity: 0.6;
+}
+
+.boton-copy{
+    margin-left: 100px;
+    margin-top: 100px;
+    height: 50px;
+    width: 50%;
+    border-radius: 10px;
+    background: blueviolet;
+    cursor: pointer;
+}
+
+body{
+    background: #A68521;
+}
